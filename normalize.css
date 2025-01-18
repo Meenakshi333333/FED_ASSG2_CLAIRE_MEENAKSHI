@@ -1,0 +1,138 @@
+html,body{overflow-y: scroll; }
+body{
+    font-family: "Slabo 13px", serif;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+
+/* Nav Bar styling*/
+#NavBar{
+    position: fixed;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    object-position: contain;
+    height: 55px;
+    width: calc(100vw - 10px);
+    background: rgb(169, 169, 169);
+    padding: 5px 5px;
+}
+
+/*MokeSell Logo*/
+#HomeButton{
+    display:flex;
+    height: 45px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor:pointer;
+    border:none;
+    background:none;
+    padding: 0px;
+    transition: background 0.4s;
+}
+#MSell{
+    font-family: "Slabo 13px", serif;
+    font-size: 20px;
+}
+
+#HomeButton:hover{
+    background: rgb(94, 93, 93);
+}
+
+/*other buttons*/
+#rightbttns{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#UserButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background: none;
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+    cursor:pointer;
+    gap: 5px;
+    padding: 3px 3px;
+    transition: background 0.4s;
+}
+#UserButton:hover{
+    background: rgb(160, 158, 158);
+}
+
+#UserImg{
+    height: 35px;
+    width: auto;
+}
+#userprof{
+    font-family: "Slabo 13px", serif;
+    font-size: 15px;
+}
+
+#LikesButton{
+    border: none;
+    background: none;
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+    cursor:pointer;
+    transition: background 0.4s;
+}
+#LikesButton:hover{
+    background: rgb(160, 158, 158);
+}
+
+#HeartImg{
+    height:30px;
+    width: auto;
+}
+
+#CartButton{
+    border: none;
+    background: None;
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+    cursor:pointer;
+    transition: background 0.4s;
+}
+#CartButton:hover{
+    background: rgb(160, 158, 158);
+}
+
+#CartImg{
+    height: 30px;
+    width: auto;
+}
+
+#SellButton{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border:none;
+    background:rgb(80, 80, 80);
+    height: 45px;
+    width: calc(100vw/17);
+    transition: background 0.4s;
+}
+#SellButton:hover{
+    background: rgb(57, 57, 57);
+}
+
+#sell{
+    font-family: "Slabo 13px", serif;
+    font-size: 15px;
+}
+
+/*Search Bar*/
