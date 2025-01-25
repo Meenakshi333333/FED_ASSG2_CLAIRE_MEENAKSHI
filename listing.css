@@ -1,0 +1,96 @@
+/* CSS for Listing Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .user-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .user-menu button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.listing-photo {
+    background-color: #ccc;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.listing-info {
+    margin-bottom: 20px;
+}
+
+.listing-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.listing-details div {
+    flex: 1;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.description {
+    margin-top: 15px;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+}
