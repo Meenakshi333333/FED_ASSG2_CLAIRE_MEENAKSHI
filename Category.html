@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MokeSell Category Page</title>
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <div id="NavBar">
+        <h1 id="To-Home">MokeSell</h1>
+        <div>
+            <button type="button" id="UserButton">
+                <img src = "user icon.png" id="UserImg">
+                <h1>Your user profile</h1>
+            </button>
+            <button type="button" id="LikesButton">
+                <img src = "heart.png" id="HeartImg">
+            </button>
+            <button type="button" id="CartButton">
+                <img src = "shopping cart.webp" id="CartImg">
+            </button>
+            <button type="button" id="SellButton">
+                <h1>Sell</h1>
+            </button>
+        </div>
+    </div>
+    <main>
+        <section class="sub-categories">
+            <h2>Your sub-categories</h2>
+            <div class="sub-category-row">
+                <div class="sub-category">row 1</div>
+                <div class="sub-category"></div>
+                <div class="sub-category"></div>
+                <div class="sub-category"></div>
+                <div class="sub-category"></div>
+            </div>
+        </section>
+        <section class="available-listings">
+            <h2>Available listings</h2>
+            <div class="listing-grid">
+                <div class="listing-card">
+                    <div class="listing-header">
+                        <div class="seller-icon"></div>
+                        <div>
+                            <span>Seller username</span><br>
+                            <span>Listing date</span>
+                        </div>
+                    </div>
+                    <div class="listing-photo">Listing photo</div>
+                    <div class="listing-details">
+                        <p>Description</p>
+                        <p>Price</p>
+                        <p>Condition</p>
+                    </div>
+                    <button type="button" id="LikesButton">
+                        <img src = "heart.png" id="HeartImg">
+                    </button>
+                </div>
+                <!-- Repeat listing-card for more items -->
+                <div class="listing-card">
+                    <div class="listing-header">
+                        <div class="seller-icon"></div>
+                        <div>
+                            <span>Seller username</span><br>
+                            <span>Listing date</span>
+                        </div>
+                    </div>
+                    <div class="listing-photo">Listing photo</div>
+                    <div class="listing-details">
+                        <p>Description</p>
+                        <p>Price</p>
+                        <p>Condition</p>
+                    </div>
+                    <button type="button" id="LikesButton">
+                        <img src = "heart.png" id="HeartImg">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

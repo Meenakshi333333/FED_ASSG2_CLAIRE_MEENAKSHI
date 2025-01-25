@@ -152,3 +152,136 @@ body{
 }
 
 /*Search Bar*/
+
+
+
+/*Category page*/
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sell-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.sell-btn:hover {
+    background-color: #e65c50;
+}
+
+/* Sub-categories */
+.sub-categories {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.sub-category-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.sub-category {
+    flex: 1;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+}
+
+/* Available Listings */
+.available-listings {
+    padding: 20px;
+    background-color: white;
+}
+
+.listing-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.listing-card {
+    flex: 1 1 calc(25% - 10px); /* Adjust size */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listing-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.seller-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.listing-photo {
+    background-color: #ddd;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+}
+
+.listing-details {
+    font-size: 14px;
+    color: #555;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    color: #ff6f61;
+    cursor: pointer;
+    align-self: flex-end;
+}
