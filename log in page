@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MokeSell Home Page</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="home.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Nav Bar-->
+    <div id="NavBar">
+        <h1 id="To-Home">MokeSell</h1>
+        <div>
+            <button type="button" id="UserButton">
+                <img src = "user icon.png" id="UserImg">
+                <h1>Your user profile</h1>
+            </button>
+            <button type="button" id="LikesButton">
+                <img src = "heart.png" id="HeartImg">
+            </button>
+            <button type="button" id="CartButton">
+                <img src = "shopping cart.webp" id="CartImg">
+            </button>
+            <button type="button" id="SellButton">
+                <h1>Sell</h1>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
