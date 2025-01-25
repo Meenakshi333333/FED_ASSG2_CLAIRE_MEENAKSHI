@@ -1,0 +1,113 @@
+/* Sub-categories */
+.sub-categories {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sub-categories h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sub-category-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.sub-category {
+    flex: 1;
+    height: 120px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Available Listings */
+.available-listings {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.available-listings h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.listing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.listing-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.listing-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.seller-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.listing-photo {
+    background-color: #ddd;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.listing-details {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    color: #ff6f61;
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 1.2rem;
+}
+
+.favorite-btn:hover {
+    color: #e65c50;
+}
