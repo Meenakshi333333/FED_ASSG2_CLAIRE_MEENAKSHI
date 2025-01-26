@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
               document.getElementById("signup").disabled = true;
               document.getElementById("dets").reset();
             }
-          }
+        }
 
           fetch("https://useraccounts-d594.restdb.io/rest/account", settings)
             .then(response => response.json())
