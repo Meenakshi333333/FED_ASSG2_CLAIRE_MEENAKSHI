@@ -139,62 +139,6 @@ body{
 
 }
 /* Profile Header */
-.profile-header {
-    background-color: #e9ecef;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%;
-}
-
-.background-picture {
-    background-color: #dee2e6;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    color: #6c757d;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.profile-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.profile-picture {
-    width: 100px;
-    height: 100px;
-    background-color: #333;
-    border-radius: 50%;
-}
-
-.profile-details h2 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.edit-profile-btn {
-    background-color: #6c757d;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Follow Stats */
-.follow-stats {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-    border-top: 1px solid #dee2e6;
-    color: #6c757d;
-}
-
-/* Profile Header */
 .container {
     margin-top: 70px;
     padding: 20px;
@@ -246,6 +190,7 @@ body{
     margin-top: 15px;
     color: #555;
 }
+
 .tabs {
     display: flex;
     justify-content: space-around;
@@ -266,91 +211,51 @@ body{
 .tabs .active {
     border-bottom: 2px solid #333;
 }
-
-/* Reviews Section */
+/* General Styling */
 .reviews-section {
-    background-color: #f4f4f4;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .big-reviews-box {
-    background-color: #dcdcdc;
-    width: 80%;
-    max-width: 700px;
+    background-color: #d9d9d9;
     padding: 20px;
     border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Rating and Orders Wrapper */
+/* Rating and Orders */
 .rating-order-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-/* Rating Box */
-.rating-box {
-    background-color: #e0e0e0;
-    padding: 15px;
-    width: 45%;
+.rating-box,
+.order-box {
+    background-color: #e6e6e6;
+    padding: 10px;
     border-radius: 10px;
+    width: 48%;
     text-align: center;
-}
-
-/* Stars Styling */
-.stars {
-    margin-top: 10px;
 }
 
 .stars label {
-    cursor: pointer;
     font-size: 20px;
-    color: #cccccc;
-    transition: color 0.3s ease;
-}
-
-.stars input {
-    display: none; /* Hide radio buttons */
-}
-
-.stars input:checked ~ label {
-    color: #f39c12; /* Highlight selected stars */
-}
-
-.stars label:hover,
-.stars label:hover ~ label {
-    color: #f39c12;
-}
-
-/* Orders Made Box */
-.order-box {
-    background-color: #e0e0e0;
-    padding: 15px;
-    width: 45%;
-    border-radius: 10px;
-    text-align: center;
+    cursor: pointer;
 }
 
 .order-input {
-    margin-top: 10px;
-    width: 50%;
+    width: 80%;
     padding: 5px;
+    font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    text-align: center;
-}
-
-/* Horizontal Line */
-hr {
-    border: 0;
-    border-top: 1px solid #a9a9a9;
-    margin: 20px 0;
 }
 
 /* Review Tabs */
@@ -361,7 +266,7 @@ hr {
     margin: 20px 0;
 }
 
-.seller-tab,
+.buyer-tab,
 .seller-tab {
     padding: 10px 20px;
     border: none;
@@ -371,33 +276,70 @@ hr {
     transition: background-color 0.3s ease;
 }
 
-.seller-tab.active-tab {
+.buyer-tab.active-tab {
     background-color: #4CAF50;
     color: white;
 }
 
-
-/* No Listings Message */
-.no-listings {
-    font-style: italic;
-    color: #5a5a5a;
+/* Reviews List */
+.reviews-list {
+    margin-top: 20px;
 }
 
-/* Save Button */
-.save-button {
-    margin-top: 100px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+.review-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-left {
+    width: 70%;
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+.time-ago {
+    font-size: 12px;
+    color: #777;
+}
+
+.comments {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d9d9d9;
     border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 14px;
 }
 
-.save-button:hover {
-    background-color: #45a049;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+.review-right {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.item-photo {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 12px;
+    color: #666;
+}
