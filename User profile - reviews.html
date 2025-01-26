@@ -55,24 +55,55 @@
                 <button class="active">Reviews</button>
             </div>
 
-        <section class="reviews-section">
-            <div class="rating-box">
-                <p>Rating out of 5</p>
-                <div class="stars">
-                    ★ ★ ★ ★ ☆
-                </div>
+            <section class="reviews-section">
+                <div class="big-reviews-box">
+                    <p></p>
+                    <!-- Review Tabs -->
+            <div class="review-tabs">
+                <button class="seller-tab active-tab">Sellers</button>
+                <button class="buyer-tab">Buyers</button>
             </div>
-       <div class="order-box">
-            <p>Orders made:</p>
-            <div class="order-number">Num</div>
-        </div>
-        <div class="review-tabs">
-            <button class="buyer-tab">Buyers</button>
-            <button class="seller-tab">Sellers</button>
-        </div>
-        <p class="no-listings">You have no sold listings yet.</p>
-    </div>
-</section>
+                    <div class="rating-order-wrapper">
+                        <!-- Rating Box -->
+                        <div class="rating-box">
+                            <p>Rating out of 5</p>
+                            <div class="stars">
+                                <!-- Star Selection -->
+                                <label>
+                                    <input type="radio" name="rating" value="1">
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2">
+                                    ★★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3">
+                                    ★★★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4">
+                                    ★★★★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5">
+                                    ★★★★★
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Orders Made Box -->
+                        <div class="order-box">
+                            <p>Orders made:</p>
+                            <input type="number" class="order-input" placeholder="Enter number" min="0">
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- No Listings Message -->
+                    <p class="no-listings">You have no sold listings yet.</p>
+                    <!-- Save Button -->
+                    <button class="save-button">Save</button>
+                </div>
+            </section>
     </main>
 </body>
 </html>
