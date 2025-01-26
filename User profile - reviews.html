@@ -32,33 +32,47 @@
                 </button>
             </div>
         </div>
-
-    <div class="container">
-        <div class="profile-header">
-            <div class="background-picture">background picture</div>
-            <div class="profile-info">
-                <div class="avatar"></div>
-                <div class="user-details">
-                    <h2>Username</h2>
-                    <p>Rating</p>
+        <div class="container">
+            <div class="profile-header">
+                <div class="background-picture">background picture</div>
+                <div class="profile-info">
+                    <div class="avatar"></div>
+                    <div class="user-details">
+                        <h2>Username</h2>
+                        <p>Rating</p>
+                    </div>
+                    <button class="edit-profile">Edit profile details</button>
                 </div>
-                <button class="edit-profile">Edit profile details</button>
+                <div class="follower-stats">
+                    <span>Following</span>
+                    <span>Followers</span>
+                </div>
             </div>
-            <div class="follower-stats">
-                <span>Following</span>
-                <span>Followers</span>
+            
+            <div class="tabs">
+                <button>Your listings</button>
+                <button>Liked listings</button>
+                <button class="active">Reviews</button>
             </div>
-        </div>
 
-        <div class="tabs">
-            <button class="active">Your listings</button>
-            <button>Liked listings</button>
-            <button>Reviews</button>
+        <section class="reviews-section">
+            <div class="rating-box">
+                <p>Rating out of 5</p>
+                <div class="stars">
+                    ★ ★ ★ ★ ☆
+                </div>
+            </div>
+       <div class="order-box">
+            <p>Orders made:</p>
+            <div class="order-number">Num</div>
         </div>
-
-        <div class="listings-section">
-            <p>no listings so far</p>
+        <div class="review-tabs">
+            <button class="buyer-tab">Buyers</button>
+            <button class="seller-tab">Sellers</button>
         </div>
+        <p class="no-listings">You have no sold listings yet.</p>
     </div>
+</section>
+    </main>
 </body>
 </html>

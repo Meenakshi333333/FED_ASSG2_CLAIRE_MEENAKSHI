@@ -139,6 +139,62 @@ body{
 
 }
 /* Profile Header */
+.profile-header {
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.background-picture {
+    background-color: #dee2e6;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.profile-details h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.edit-profile-btn {
+    background-color: #6c757d;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Follow Stats */
+.follow-stats {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+}
+
+/* Profile Header */
 .container {
     margin-top: 70px;
     padding: 20px;
@@ -190,7 +246,6 @@ body{
     margin-top: 15px;
     color: #555;
 }
-
 .tabs {
     display: flex;
     justify-content: space-around;
@@ -212,13 +267,37 @@ body{
     border-bottom: 2px solid #333;
 }
 
-.listings-section {
-    background-color: #d3dce3;
-    height: 200px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    color: #555;
+/* Review Tabs */
+.review-tabs {
+    margin-bottom: 20px;
 }
+
+.review-tabs button {
+    padding: 10px 20px;
+    border: none;
+    margin: 0 10px;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-tabs button:hover {
+    background-color: #5a6268;
+}
+
+.buyer-tab {
+    background-color: #007bff;
+}
+
+.buyer-tab:hover {
+    background-color: #0056b3;
+}
+
+/* No Listings Message */
+.no-listings {
+    font-style: italic;
+    color: #6c757d;
+}
+
