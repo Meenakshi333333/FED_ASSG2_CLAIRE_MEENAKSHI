@@ -267,37 +267,141 @@ body{
     border-bottom: 2px solid #333;
 }
 
+/* Reviews Section */
+.reviews-section {
+    background-color: #f4f4f4;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-reviews-box {
+    background-color: #dcdcdc;
+    width: 80%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Rating and Orders Wrapper */
+.rating-order-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Rating Box */
+.rating-box {
+    background-color: #e0e0e0;
+    padding: 15px;
+    width: 45%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Stars Styling */
+.stars {
+    margin-top: 10px;
+}
+
+.stars label {
+    cursor: pointer;
+    font-size: 20px;
+    color: #cccccc;
+    transition: color 0.3s ease;
+}
+
+.stars input {
+    display: none; /* Hide radio buttons */
+}
+
+.stars input:checked ~ label {
+    color: #f39c12; /* Highlight selected stars */
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #f39c12;
+}
+
+/* Orders Made Box */
+.order-box {
+    background-color: #e0e0e0;
+    padding: 15px;
+    width: 45%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.order-input {
+    margin-top: 10px;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Horizontal Line */
+hr {
+    border: 0;
+    border-top: 1px solid #a9a9a9;
+    margin: 20px 0;
+}
+
 /* Review Tabs */
 .review-tabs {
     margin-bottom: 20px;
 }
 
 .review-tabs button {
-    padding: 10px 20px;
+    padding: 30px 50px;
     border: none;
     margin: 0 10px;
-    background-color: #6c757d;
+    background-color: #757575;
     color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .review-tabs button:hover {
-    background-color: #5a6268;
+    background-color: #5a5a5a;
 }
 
 .buyer-tab {
-    background-color: #007bff;
+    background-color: #707070;
 }
 
 .buyer-tab:hover {
-    background-color: #0056b3;
+    background-color: #505050;
 }
 
 /* No Listings Message */
 .no-listings {
     font-style: italic;
-    color: #6c757d;
+    color: #5a5a5a;
+}
+
+/* Save Button */
+.save-button {
+    margin-top: 100px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
