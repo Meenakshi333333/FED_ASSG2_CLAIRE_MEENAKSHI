@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const APIKEY = "6796210b0acc06ecb10d3649";
 
-    document.getElementById("loginbttn").addEventListener("click", function (e) {
+    document.getElementById("signup").addEventListener("click", function (e) {
         e.preventDefault();
 
         let SUusername = document.getElementById("SU_username").value;
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             body: JSON.stringify(jsondata), //to convert script to json file for api
             beforeSend: function () {
-              document.getElementById("loginbttn").disabled = true;
+              document.getElementById("signup").disabled = true;
               document.getElementById("dets").reset();
             }
           }
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
           fetch("https://useraccounts-d594.restdb.io/rest/account", settings)
             .then(response => response.json())
             .then(data => {
-                document.getElementById("loginbttn").disabled = false;
+                document.getElementById("signup").disabled = false;
             });
     });
 
