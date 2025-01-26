@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 #the_whole_page{
     display: flex;
     flex-direction: row;
@@ -6,27 +9,31 @@
 #left_side{
     width: 50vw;
     height: 100vh;
-    object-fit: cover;
 }
 img{
+    width:50vw;
+    height:100vh;
     object-fit: cover;
 }
 
 #right_side{
     width: 50vw;
     height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+
 #signup_box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    background: rgb(69,90,100);
+    background: rgb(84,110,122);
     width: 33vw;
     max-height: 60vh;
     height: auto;
-    object-fit: cover;
 }
 
 #content{
@@ -35,9 +42,8 @@ img{
     justify-content: center;
     align-items: center;
     font-family: "Slabo 13px", serif;
-    object-fit: cover;
 }
- h1,text{
+ h1,p{
     color:black;
  }
 #dets{
@@ -46,11 +52,12 @@ img{
     justify-content: center;
     align-items: center;
     width:auto;
+    gap:6px;
 }
  .inputs{
     border-radius: 5px;
     color: rgb(207,216,220);
-    height: 11vh;
+    height: 8vh;
     width:  28vw;
  }
  #tologin{
