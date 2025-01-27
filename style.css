@@ -34,18 +34,33 @@ img{
     width: 33vw;
     max-height: 60vh;
     height: auto;
+    position:absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #content{
+    position:relative;
+    height: 100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: "Slabo 13px", serif;
+    gap: 10px;
 }
- h1,p{
+ h1,h2,p{
     color:black;
+    margin:0;
  }
+ h1{
+    font-weight: 500;
+ }
+ h2{
+    font-weight: 500;
+ }
+
+
 #dets{
     display:flex;
     flex-direction: column;
@@ -56,11 +71,12 @@ img{
 }
  .inputs{
     border-radius: 5px;
+    border: none;
     color: rgb(207,216,220);
     height: 8vh;
     width:  28vw;
  }
- #tologin{
+ #to-login{
     display:flex;
     flex-direction: row;
  }
