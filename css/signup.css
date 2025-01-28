@@ -5,16 +5,40 @@ body{
     overflow: hidden;
 }
 
-#left_side{
-    object-fit: content;
-    top:0;
-    left:0;
+/*carousel panel*/
+.carousel {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-width: 50vw; /* Fixed to 50% of the screen width */
+    display: flex;
+    overflow: hidden; /* Hides images outside of the viewable area */
 }
-img{
-    height:100vh;
-    width:auto;
-    max-width: 50vw;
-    object-fit: cover;
+
+/* Inner Image Wrapper */
+#carouselimg {
+    display: flex; /* Align images horizontally */
+    width: calc(50vw * 4); /* Total width = 50vw per image × 4 images */
+    animation: slide 10s linear infinite; /* Smooth animation over 10 seconds */
+}
+
+/* Individual Images */
+.carouselimg {
+    flex-shrink: 0; /* Prevent images from shrinking */
+    width: 50vw; /* Matches the width of the container */
+    height: 100vh; /* Ensures images cover the full height */
+    object-fit: cover; /* Crops images nicely without distortion */
+    margin: 0;
+}
+
+/* Keyframes for Sliding Animation */
+@keyframes slide {
+    0% { transform: translateX(0); }          /* Start with the first image */
+    25% { transform: translateX(-50vw); }    /* Slide to the second image */
+    50% { transform: translateX(-100vw); }   /* Slide to the third image */
+    75% { transform: translateX(-150vw); }   /* Slide to the fourth image */
+    100% { transform: translateX(0); }       /* Loop back to the first image */
 }
 
 #right_side{
@@ -74,7 +98,7 @@ img{
  .inputs{
     border-radius: 5px;
     border: none;
-    color: rgb(207,216,220);
+    color: rgb(0, 0, 0);
     height: 8vh;
     width:  28vw;
  }

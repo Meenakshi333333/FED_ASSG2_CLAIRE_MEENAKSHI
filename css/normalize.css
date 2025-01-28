@@ -16,6 +16,8 @@ FFFFFF – rgb(255,255,255)
 body{
     font-family: "Slabo 13px", serif;
     background-color: rgb(207,216,220);
+    margin:0;
+    padding:0;
 }
 
 /* Nav Bar styling*/
