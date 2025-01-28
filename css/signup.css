@@ -1,18 +1,19 @@
 body{
     margin: 0;
-}
-#the_whole_page{
-    display: flex;
+    display:flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 #left_side{
-    width: 50vw;
-    height: 100vh;
+    object-fit: content;
+    top:0;
+    left:0;
 }
 img{
     height:100vh;
     width:auto;
+    max-width: 50vw;
     object-fit: cover;
 }
 
@@ -22,11 +23,12 @@ img{
     display:flex;
     justify-content: center;
     align-items: center;
-    position:absolute;
+    position:relative;
+    min-width: 50vw;
 }
 
 #signup_box{
-    position:relative;
+    position:absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
