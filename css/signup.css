@@ -11,20 +11,22 @@ body{
     height: 100vh;
 }
 img{
-    width:50vw;
     height:100vh;
+    width:auto;
     object-fit: cover;
 }
 
 #right_side{
-    width: 50vw;
+    width: auto;
     height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
+    position:absolute;
 }
 
 #signup_box{
+    position:relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,13 +36,11 @@ img{
     width: 33vw;
     max-height: 60vh;
     height: auto;
-    position:absolute;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 #content{
-    position:relative;
     height: 100%;
     display:flex;
     flex-direction: column;
