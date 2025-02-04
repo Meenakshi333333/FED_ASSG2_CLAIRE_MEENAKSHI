@@ -222,17 +222,20 @@ body{
 }
 
 .listing-photo {
-    background-color: #ddd;
-    height: 150px;
-    border-radius: 8px;
+    width: 100%;
+    height: 300px; /* Increase height for a bigger image */
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #555;
-    font-size: 1rem;
-    margin-bottom: 20px;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px; /* Matches product card style */
 }
 
+.listing-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the box */
+}
 .listing-details {
     font-size: 0.95rem;
     color: #555;
