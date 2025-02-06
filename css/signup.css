@@ -1,49 +1,68 @@
-body{
+
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
     display:flex;
-    flex-direction: row;
-    overflow: hidden;
+    height: 100vh;
+}
+
+#left_side{
+    flex:1;
+    position: relative;
+    overflow: hidden; /*hide other photos*/
 }
 
 /*carousel panel*/
-.carousel {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    max-width: 50vw; /* Fixed to 50% of the screen width */
+.carousel{
     display: flex;
-    overflow: hidden; /* Hides images outside of the viewable area */
+    transition: transform 1s ease-in-out;
 }
 
-/* Inner Image Wrapper */
-#carouselimg {
-    display: flex; /* Align images horizontally */
-    width: calc(50vw * 4); /* Total width = 50vw per image × 4 images */
-    animation: slide 10s linear infinite; /* Smooth animation over 10 seconds */
+.photo {
+    flex: 0 0 100%;
 }
 
-/* Individual Images */
-.carouselimg {
-    flex-shrink: 0; /* Prevent images from shrinking */
-    width: 50vw; /* Matches the width of the container */
-    height: 100vh; /* Ensures images cover the full height */
-    object-fit: cover; /* Crops images nicely without distortion */
-    margin: 0;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Keyframes for Sliding Animation */
-@keyframes slide {
-    0% { transform: translateX(0); }          /* Start with the first image */
-    25% { transform: translateX(-50vw); }    /* Slide to the second image */
-    50% { transform: translateX(-100vw); }   /* Slide to the third image */
-    75% { transform: translateX(-150vw); }   /* Slide to the fourth image */
-    100% { transform: translateX(0); }       /* Loop back to the first image */
+/*dots*/
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10; /*overlap*/
 }
 
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:rgba(120, 120, 120, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background: rgb(41, 40, 40);
+}
+.dot:hover {
+    background:rgba(88, 88, 88, 0.5);
+}
+
+
+/*Sign up box*/
 #right_side{
-    width: auto;
-    height: 100vh;
+    flex: 1;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -101,14 +120,31 @@ body{
     color: rgb(0, 0, 0);
     height: 8vh;
     width:  28vw;
+    transition: background 0.3s;
  }
+
+ .inputs:focus {
+    outline: 2px solid #0056b3;
+    background-color: #f0f0f0;
+}
+
+#signup:hover {
+    transform: scale(1.05);
+
+}
+
  #to-login{
     display:flex;
     flex-direction: row;
  }
+
  #loginbttn{
     color: rgb(55,71,79);
     background: none;
     border: none;
-    
+    transition: color 0.3s;
+ }
+
+ #loginbutton:hover {
+    color: rgb(39, 50, 56);
  }

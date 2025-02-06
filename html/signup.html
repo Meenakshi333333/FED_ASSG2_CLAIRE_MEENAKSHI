@@ -11,19 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="carousel">
-        <div id="carouselimg">
-            <img src="/images/frontdisplay.jpg">
-    
-            <img src="/images/frontdisplay2.jpg">
-    
-            <img src="/images/frontdisplay3.jpg">
-            
-            <img src="/images/frontdisplay4.jpg">
+    <div id="left_side">
+        <div class="carousel">
+            <div class = "photo"><img src="/images/frontdisplay.jpg" alt = "photo1"></div>
+            <div class = "photo"><img src="/images/frontdisplay2.jpg" alt = "photo2"></div>
+            <div class = "photo"><img src="/images/frontdisplay3.jpg" alt = "photo3"></div>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
         </div>
     </div>
     <div id="right_side">
-        <container id="signup_box">
+        <div id="signup_box">
             <div id="content">
                 <h1>Welcome to MokeSell!</h1>
                 <h2>Create account</h2>
@@ -38,7 +39,7 @@
                     <button type="button" id="loginbttn">Log in</button>
                 </div>
             </div>
-        </container>
+        </div>
     </div>
     <script src="/javascript/signup.js"></script>
 </body>
