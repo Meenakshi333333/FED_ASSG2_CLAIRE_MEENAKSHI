@@ -168,18 +168,20 @@ body{
 }
 
 .category-item {
-    width: 120px;
-    height: 50px;
-    background-color: white;
+    width: 100px;  /* Increased size for a bigger circle */
+    height: 100px;
+    background: radial-gradient(circle, #87CEEB 50%, #5F9EA0 100%); /* Light blue and soft peach gradient */
     padding: 10px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 50%; /* Makes it a circle */
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    border: 1px solid #ccc;
+    border: 2px solid #FFD3B6; /* Soft Peach Border */
+    color: #333; /* Darker text for readability */
 }
+
 
 .recommended h3 {
     font-size: 26px; /* Increase the heading size */
