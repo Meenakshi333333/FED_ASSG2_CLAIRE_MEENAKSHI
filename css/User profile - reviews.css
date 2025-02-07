@@ -138,61 +138,6 @@ body{
     color: white;
 
 }
-/* Profile Header */
-.profile-header {
-    background-color: #e9ecef;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%;
-}
-
-.background-picture {
-    background-color: #dee2e6;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    color: #6c757d;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.profile-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.profile-picture {
-    width: 100px;
-    height: 100px;
-    background-color: #333;
-    border-radius: 50%;
-}
-
-.profile-details h2 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.edit-profile-btn {
-    background-color: #6c757d;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Follow Stats */
-.follow-stats {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-    border-top: 1px solid #dee2e6;
-    color: #6c757d;
-}
 
 /* Profile Header */
 .container {
@@ -246,6 +191,7 @@ body{
     margin-top: 15px;
     color: #555;
 }
+
 .tabs {
     display: flex;
     justify-content: space-around;
@@ -269,22 +215,54 @@ body{
 
 /* Reviews Section */
 .reviews-section {
-    background-color: #f4f4f4;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .big-reviews-box {
-    background-color: #dcdcdc;
-    width: 80%;
-    max-width: 700px;
+    background-color: #d9d9d9;
     padding: 20px;
     border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
+
+/* Review Tabs */
+.review-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.seller-tab, .buyer-tab {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    background-color: #e0e0e0;
+}
+
+.buyer-tab {
+    background-color: #4CAF50; /* Green for active buyer tab */
+    color: white;
+}
+
+.seller-tab {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.seller-tab:hover, .buyer-tab:hover {
+    background-color: #ccc;
+}
+
 
 /* Rating and Orders Wrapper */
 .rating-order-wrapper {
@@ -345,37 +323,6 @@ body{
     border: 1px solid #ccc;
     text-align: center;
 }
-
-/* Horizontal Line */
-hr {
-    border: 0;
-    border-top: 1px solid #a9a9a9;
-    margin: 20px 0;
-}
-
-/* Review Tabs */
-.review-tabs {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.seller-tab,
-.seller-tab {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
-.seller-tab.active-tab {
-    background-color: #4CAF50;
-    color: white;
-}
-
 
 /* No Listings Message */
 .no-listings {
