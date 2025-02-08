@@ -7,19 +7,25 @@
 
 body{
     display:flex;
+    width: 100vw;
     height: 100vh;
+    background: linear-gradient(to right, #ffffff 50%, #CFD8DC 50%);
+    overflow: hidden;
 }
 
 #left_side{
     flex:1;
     position: relative;
     overflow: hidden; /*hide other photos*/
+    background: white;
+    margin-bottom: 30px;
 }
 
 /*carousel panel*/
 .carousel{
     display: flex;
     transition: transform 1s ease-in-out;
+    
 }
 
 .photo {
@@ -66,23 +72,26 @@ img {
     display:flex;
     justify-content: center;
     align-items: center;
-    position:relative;
-    min-width: 50vw;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 
+#right_side::-webkit-scrollbar{
+    display:none;
+}
 #signup_box{
     position:absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
-    background: rgb(84,110,122);
-    width: 33vw;
-    max-height: 60vh;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    border-radius: 10%;
+    background: white;
+    width: 340px;
+    height: 435px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 6px 4px 5px grey;
 }
 
 #content{
@@ -99,10 +108,15 @@ img {
     margin:0;
  }
  h1{
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 3.5vh;
+    text-align: center;
  }
  h2{
     font-weight: 500;
+    font-size: 2.5vh;
+    text-align: center;
+    margin-top: 25px;
  }
 
 
@@ -118,33 +132,59 @@ img {
     border-radius: 5px;
     border: none;
     color: rgb(0, 0, 0);
-    height: 8vh;
-    width:  28vw;
-    transition: background 0.3s;
+    height: 46px;
+    width: 245px;
+    background-color:rgb(233, 231, 231);
+    transition: background-color 0.3s;
+    padding: 10px;
  }
 
  .inputs:focus {
-    outline: 2px solid #0056b3;
-    background-color: #f0f0f0;
+    outline: 2px solid #000000;
+    background-color: #bbbbbb;
 }
 
+#signup {
+    height: 4vh;
+    width: 80px;
+    background: rgb(207,216,220);
+    border: none;
+    border-radius: 3px;
+}
 #signup:hover {
     transform: scale(1.05);
-
 }
 
  #to-login{
     display:flex;
     flex-direction: row;
+    gap: 3px;
  }
 
  #loginbttn{
+    width:37px;
+    height:auto;
+    border-radius: 15%;
+    background-color: #ffffff;
     color: rgb(55,71,79);
-    background: none;
     border: none;
     transition: color 0.3s;
+    cursor: pointer;
+    transition: background-color 0.3s;
  }
 
- #loginbutton:hover {
-    color: rgb(39, 50, 56);
+ #loginbttn:hover {
+    background-color:#bebebe;
  }
+
+ @media screen and (max-width: 768px) { 
+    #left_side { 
+        display: none; 
+    }
+    #right_side {
+        width: 100vw;
+    }
+    body {
+        background:  rgb(207,216,220);
+    }
+}
