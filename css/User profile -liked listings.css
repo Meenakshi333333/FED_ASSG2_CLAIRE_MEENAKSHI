@@ -216,38 +216,73 @@ body{
 
 
 /* Listings Grid */
+/* Listings Grid */
 .listings-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ensures consistent column width */
     gap: 20px;
     padding: 20px;
+    align-items: stretch; /* Ensures all cards have the same height */
 }
 
+/* Listing Card */
 .listing-card {
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
-    padding: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%; /* Ensures all cards are of equal width */
+    height: 450px; /* Set a fixed height for all cards */
 }
 
+/* Listing Header */
 .listing-header {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
     color: #666;
+    align-items: center;
 }
 
+/* Listing Photo */
 .listing-photo {
     width: 100%;
-    height: 150px;
-    background-color: #ccc;
+    height: 250px; /* Set uniform height for all images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.listing-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the container without distortion */
+}
+
+/* Listing Details */
+.listing-details {
+    flex-grow: 1; /* Ensures text aligns properly and keeps spacing uniform */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.listing-details h3 {
+    font-size: 16px;
+    font-weight: bold;
     margin: 10px 0;
 }
 
 .listing-details p {
-    margin: 5px 0;
+    font-size: 14px;
+    color: #444;
 }
 
 .like-button {
