@@ -65,13 +65,39 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(data => {
             console.log("Account created successfully:", data);
-            alert("Account created successfully!");
+            alert("Account created successfully! Redirecting...");
             document.getElementById("dets").reset();
+
+            setTimeout(() => {
+                window.location.replace("/html/home.html"); 
+            }, 500);
         })
         .catch(error => {
             console.error("Error:", error.message);
             alert("Failed to create account. Please try again.");
         });
+        
     });
   
 });
+
+    //   fetch("https://useraccounts-d594.restdb.io/rest/account", settings)
+    //     .then(response => {
+    //         if (!response.ok) {
+    //             throw new Error(`HTTP error! Status: ${response.status}`);
+    //         }
+    //         return response.json();
+    //     })
+    //     .then(data => {
+    //         console.log("Account created successfully:", data);
+    //         alert("Account created successfully! Redirecting...");
+    //         document.getElementById("dets").reset();
+
+    //         setTimeout(() => {
+    //             window.location.replace("/html/home.html"); 
+    //         }, 500);
+    //     })
+    //     .catch(error => {
+    //         console.error("Error:", error.message);
+    //         alert("Failed to create account. Please try again.");
+    //     });
