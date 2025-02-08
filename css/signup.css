@@ -55,7 +55,7 @@ img {
     border-radius: 50%;
     background:rgba(120, 120, 120, 0.5);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .dot.active {

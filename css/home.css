@@ -1,142 +1,5 @@
-body{
-    font-family: "Slabo 13px", serif;
-    background-color: rgb(207,216,220);
-}
-
-/* Nav Bar styling*/
-#NavBar{
-    position: fixed;
-    top:0;
-    left:0;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    object-fit: contain;
-    height: 55px;
-    width: calc(100vw - 10px);
-    background: rgb(144, 164, 174);
-    padding: 5px 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/*MokeSell Logo*/
-#HomeButton{
-    display:flex;
-    height: 45px;
-    width: 120px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    cursor:pointer;
-    border:none;
-    background:none;
-    padding: 0px;
-    transition: background 0.4s;
-}
-#MSell{
-    font-family: "Slabo 13px", serif;
-    font-size: 22px;
-    font-weight: 550;
-}
-
-#HomeButton:hover{
-    transform: scale(1.1);
-}
-
-/*other buttons*/
-#rightbttns{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
-
-#UserButton{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: none;
-    background: none;
-    height: 45px;
-    width: auto;
-    border-radius: 8px;
-    cursor:pointer;
-    gap: 5px;
-    padding: 3px 3px;
-    transition: background 0.4s;
-}
-#UserButton:hover{
-    background: rgb(118, 134, 142);
-}
-
-#UserImg{
-    height: 35px;
-    width: auto;
-}
-#userprof{
-    font-family: "Slabo 13px", serif;
-    font-size: 13px;
-}
-
-#LikesButton{
-    border: none;
-    background: none;
-    height: 35px;
-    width: auto;
-    border-radius: 8px;
-    cursor:pointer;
-    transition: background 0.4s;
-}
-#LikesButton:hover{
-    background: rgb(118, 134, 142);
-}
-
-#HeartImg{
-    height:30px;
-    width: auto;
-}
-
-#CartButton{
-    border: none;
-    background: None;
-    height:35px;
-    width: auto;
-    border-radius: 8px;
-    cursor:pointer;
-    transition: background 0.4s;
-}
-#CartButton:hover{
-    background: rgb(118, 134, 142);
-}
-
-#CartImg{
-    height: 30px;
-    width: auto;
-}
-
-#SellButton{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    border:none;
-    background: rgb(69,90,100);
-    height: 40px;
-    width: calc(100vw/17);
-    cursor:pointer;
-    transition: background 0.4s;
-}
-#SellButton:hover{
-    background:rgb(56, 73, 81);
-}
-
-#sell{
-    font-family: "Slabo 13px", serif;
-    font-size: 15px;
-    font-weight: 500;
-    color: white;
-
+body::-webkit-scrollbar{
+    display:none;
 }
 /*main*/
 .carousel {
@@ -160,26 +23,46 @@ body{
     margin-bottom: 10px;
 }
 
-.category-list, .product-list {
+.category-list {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: calc((100vw - 1445px)/7);
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.category-list::-webkit-scrollbar {
+    display: none;
 }
 
+/*cat button*/
 .category-item {
-    width: 100px;  /* Increased size for a bigger circle */
-    height: 100px;
-    background: radial-gradient(circle, #87CEEB 50%, #5F9EA0 100%); /* Light blue and soft peach gradient */
-    padding: 10px;
-    text-align: center;
-    border-radius: 50%; /* Makes it a circle */
+    height: 160px;
+    background: none;
+    border: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5px;
+    transition: transform 0.6s ease, background 0.6s ease;
+    cursor: pointer;
+}
+.cat-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    box-shadow: 0 0 10px 2px rgb(192, 192, 192);
+}
+.cat {
     font-weight: bold;
-    border: 2px solid #FFD3B6; /* Soft Peach Border */
-    color: #333; /* Darker text for readability */
+    color: #333;
+}
+.category-item:hover {
+	-webkit-transform: translateY(-4px);
+	transform: translateY(-4px);
+    background: rgb(199, 199, 199);
 }
 
 
@@ -193,13 +76,20 @@ body{
     font-weight: bold; /* Optional: Make it stand out */
 }
 
-.product-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.bprice-frame{
+
+}
+.bprice-list {
+    display: flex;
+    flex-direction: row;
     gap: 20px;
 }
-
+.brice-item {
+    border:none;
+    width: 250
+}
 .product-item {
+    border: none;
     width: 300px;
     height: 450px;
     background-color: white;
@@ -250,17 +140,4 @@ body{
     color: #333;
 }
 
-button {
-    padding: 5px 10px;
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #e63946;
-}
 
