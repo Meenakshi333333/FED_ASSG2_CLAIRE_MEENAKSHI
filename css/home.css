@@ -190,9 +190,4 @@ body::-webkit-scrollbar{
     color: #333;
 }
 
-.lottie {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+

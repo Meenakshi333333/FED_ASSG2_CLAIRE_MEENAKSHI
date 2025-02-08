@@ -81,6 +81,15 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Account created successfully:", data);
         alert("Account created successfully!");
 
+        localStorage.setItem("username", SUusername);
+        localStorage.setItem("email", SUemail);
+        localStorage.setItem("name", "");
+        localStorage.setItem("bio", "");
+        localStorage.setItem("gender", "");
+        localStorage.setItem("location","");
+        var a = new Date();
+        localStorage.setItem("birthday", a.toString());
+
         document.getElementById("dets").reset();
         setTimeout(() => {
             window.location.replace("/html/home.html"); 

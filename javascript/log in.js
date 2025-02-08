@@ -78,7 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
         let user = existingUser[0];
         if (user.password === LIpassword && user.username === LIusername) {
             alert("Login successful!");
-
+            localStorage.setItem("username", SUusername);
+            localStorage.setItem("email", SUemail);
             setTimeout(() => {
                 window.location.replace("/html/home.html"); 
             }, 500);
