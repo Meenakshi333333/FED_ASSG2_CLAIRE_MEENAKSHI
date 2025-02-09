@@ -35,10 +35,12 @@ We wanted to design and create a ecommerce platform selling pre-loved items to b
 - Some listing pictures were sourced from [Pinterest](https://www.pinterest.com/).
 - Icons and other pictures just sourced from [Google](https://www.google.com/).
 
-### 
 ### Platforms I consulted during this process
 1) [W3Schools](https://www.w3schools.com/)
 2) [Stack Overflow](https://stackoverflow.com/)
 3) [Carousel](https://www.carousell.sg/)
 4) [ChatGPT](https://chatgpt.com/)
 5) [Google](https://www.google.com/)
+
+## GitHub Repository Link
+[Repo Link](https://meenakshi333333.github.io/FED_ASSG2_CLAIRE_MEENAKSHI/)
