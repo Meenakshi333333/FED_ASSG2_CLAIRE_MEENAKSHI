@@ -12,30 +12,50 @@
 </head>
 <body>
     
-    <!--Nav Bar-->
-    <div id="NavBar">
-        <button type="button" id="HomeButton">
-            <text id="MSell">MokeSell</text>
-        </button>
-        <div id="rightbttns">
-            <button type="button" id="UserButton">
-                <img src = "/images/user icon.png" id="UserImg">
-                <text id="userprof">Your user profile</text>
+    
+    <div class="heading">
+        <!--Nav Bar-->
+        <div id="NavBar">
+            <button type="button" id="HomeButton">
+                <text id="MSell">MokeSell</text>
             </button>
-            <button type="button" id="LikesButton">
-                <img src = "/images/heart.png" id="HeartImg">
-            </button>
-            <button type="button" id="CartButton">
-                <img src = "/images/shopping cart.webp" id="CartImg">
-            </button>
-            <button type="button" id="SellButton">
-                <text id="sell">Sell</text>
-            </button>
+            <div id="dropdown">
+                <button onclick="myFunction()" id="cat-dropdown">Search by category</button>
+                <div id="option-dropdown" class="search-content">
+                    <input type="text" placeholder="Search..." id="search-cat-input" onkeyup="filterFunction()">
+                    <button type="button" class="cat-option" id="to-cat-page">Women's Fashion</button>
+                    <button type="button" class="cat-option">Men's Fashion</button>
+                    <button type="button" class="cat-option">Athleisure</button>
+                    <button type="button" class="cat-option">Jewelry</button>
+                    <button type="button" class="cat-option">Beauty Products</button>
+                    <button type="button" class="cat-option">Furniture</button>
+                    <button type="button" class="cat-option">Home Appliances</button>
+                    <button type="button" class="cat-option">Story Books</button>
+                    <button type="button" class="cat-option">Learning $ Enrichment</button>
+                    <button type="button" class="cat-option">Pet Supplies</button>
+                    <button type="button" class="cat-option">Sports Equipment</button>
+                    <button type="button" class="cat-option">Others</button>    
+                </div>
+            </div>
+            <div id="rightbttns">
+                <button type="button" id="UserButton">
+                    <img src = "/images/user icon.png" id="UserImg">
+                    <text id="userprof">Your user profile</text>
+                </button>
+                <button type="button" id="LikesButton">
+                    <img src = "/images/heart.png" id="HeartImg">
+                </button>
+                <button type="button" id="CartButton">
+                    <img src = "/images/shopping cart.webp" id="CartImg">
+                </button>
+                <button type="button" id="SellButton">
+                    <text id="sell">Sell</text>
+                </button>
+            </div>
         </div>
+        <hr>
+        
     </div>
-
-    <!--Search Bar-->
-
     <div class="categories">
         <h3>Categories</h3>
         <div class="category-list">
@@ -92,7 +112,7 @@
     <div class="best-prices">
         <h3>Best Prices</h3>
         <div class="bprice-list">
-            <button class="bprice-item">
+            <button id = "tolisting" class="bprice-item">
                 <div class="userdets">
                     <p class="username">EtoileFlowers</p>
                     <p class="listdate">31/02/24</p>
