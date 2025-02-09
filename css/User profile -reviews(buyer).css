@@ -202,4 +202,11 @@
     line-height: 100px;
     font-size: 12px;
     color: #666;
+    overflow: hidden; /* Ensures content doesn't overflow outside the box */
+}
+
+.item-photo img {
+    width: 100%; /* Scales the image to fit within the container */
+    height: 100%; /* Ensures the image fully covers the box */
+    object-fit: cover; /* Ensures the image is cropped and maintains aspect ratio */
 }
