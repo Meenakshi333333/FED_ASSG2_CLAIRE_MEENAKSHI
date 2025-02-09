@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MokeSell - edit profile details</title>
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="/css/editprofile.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!--Nav Bar-->
+     <div id="NavBar">
+        <button type="button" id="HomeButton">
+            <text id="MSell">MokeSell</text>
+        </button>
+        <div id="rightbttns">
+            <button type="button" id="UserButton">
+                <img src = "/images/user icon.png" id="UserImg">
+                <text id="userprof">Your user profile</text>
+            </button>
+            <button type="button" id="LikesButton">
+                <img src = "/images/heart.png" id="HeartImg">
+            </button>
+            <button type="button" id="CartButton">
+                <img src = "/images/shopping cart.webp" id="CartImg">
+            </button>
+            <button type="button" id="SellButton">
+                <text id="sell">Sell</text>
+            </button>
+        </div>
+    </div>
+
+
+    <form id="profile-dets">
+        <h1>Edit profile</h1>
+        <div id="profile-photo">
+            <h2>Profile photo</h2>
+            <div id="photo-dets">
+                <img id="userpfp" src="/images/default pfp.webp" alt="user profile">
+                <input type="file" id="newuserpfp" name="userpfp" accept="image/*" >
+            </div>
+        </div>
+        <div id="public-dets">
+            <h2>Public profile details</h2>
+            <label for = "username" class="labels">Username</label>
+            <input type="text" name="username" placeholder="" id="username">
+
+            <label for = "name" class="labels">Your name</label>
+            <input type="text" name="name" placeholder="" id="name">
+
+            <label for = "bio" class="labels">Bio</label>
+            <textarea id="bio" name="bio" rows = "4" column = "60"></textarea>
+        </div>
+        <div id="location">
+            <h2>Location</h2>
+            <div class="location-select">
+                <select>
+                    <option value="0">Singapore</option>
+                    <option value="1">Australia</option>
+                    <option value="2">Canada</option>
+                    <option value="3">Hong Kong</option>
+                    <option value="4">Indonesia</option>
+                    <option value="5">Malaysia</option>
+                    <option value="6">New Zealand</option>
+                    <option value="7">Philippines</option>
+                    <option value="8">Taiwan</option>
+                </select>
+            </div>
+        </div>
+        <div id="private-dets">
+            <h2>Private User Details</h2>
+            <label for="email" class="labels">Email</label>
+            <input type="text" name="email" placeholder="" id="email">
+
+            <label for="gender" class="labels">Gender</label>
+            <div class="gender-select">
+                <select>
+                    <option value="0">Your gender:</option>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                </select>
+            </div>
+
+            <label for="birthday" class="labels">Birthday</label>
+            <input type="date" name = "birthday" id = "birthday">
+        </div>
+        <hr>
+        <input type="submit" value="Save Changes" id="save">
+    </form>
+
+    <div class="lottie">
+        <dotlottie-player src="https://lottie.host/1d04651f-934a-4225-a5ba-cfea6dc3ec24/yQYLA1vO2v.lottie" 
+            background="transparent" 
+            speed="1" 
+            style="width: 300px; height: 300px" 
+            loop 
+            autoplay>
+        </dotlottie-player>
+        <h2>You have reached the end :P</h2>
+    </div>
+    
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="/javascript/editprofile.js"></script>
+</body>
+</html>

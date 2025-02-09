@@ -56,48 +56,55 @@ document.addEventListener("DOMContentLoaded", function () {
         body: JSON.stringify(jsondata)
       };
   
-      fetch("https://useraccounts-d594.restdb.io/rest/account", settings)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
+      try {
+        let checkResponse = fetch(`https://useraccounts-d594.restdb.io/rest/account?q={"email": "${SUemail}"}`, {
+            headers: {
+                "x-apikey": APIKEY
             }
-            return response.json();
-        })
-        .then(data => {
-            console.log("Account created successfully:", data);
-            alert("Account created successfully! Redirecting...");
-            document.getElementById("dets").reset();
-
-            setTimeout(() => {
-                window.location.replace("/html/home.html"); 
-            }, 500);
-        })
-        .catch(error => {
-            console.error("Error:", error.message);
-            alert("Failed to create account. Please try again.");
         });
+
+        let existingUsers = checkResponse.json();
+
+        if (existingUsers.length > 0) {
+            alert("This email is already registered. Please use another email.");
+            signupButton.disabled = false;
+            return;
+        }
+
+        let response = fetch("https://useraccounts-d594.restdb.io/rest/account", settings);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        let data = response.json();
+        console.log("Account created successfully:", data);
+        alert("Account created successfully!");
+
+        localStorage.setItem("username", SUusername);
+        localStorage.setItem("email", SUemail);
+        localStorage.setItem("name", "");
+        localStorage.setItem("bio", "");
+        localStorage.setItem("gender", "");
+        localStorage.setItem("location","");
+        var a = new Date();
+        localStorage.setItem("birthday", a.toString());
+
+        document.getElementById("dets").reset();
+        setTimeout(() => {
+            window.location.replace("/html/home.html"); 
+        }, 500);
+        
+    } catch (error) {
+        console.error("Error:", error.message);
+        alert("Failed to create account. Please try again.");
+    }
         
     });
   
 });
 
-    //   fetch("https://useraccounts-d594.restdb.io/rest/account", settings)
-    //     .then(response => {
-    //         if (!response.ok) {
-    //             throw new Error(`HTTP error! Status: ${response.status}`);
-    //         }
-    //         return response.json();
-    //     })
-    //     .then(data => {
-    //         console.log("Account created successfully:", data);
-    //         alert("Account created successfully! Redirecting...");
-    //         document.getElementById("dets").reset();
-
-    //         setTimeout(() => {
-    //             window.location.replace("/html/home.html"); 
-    //         }, 500);
-    //     })
-    //     .catch(error => {
-    //         console.error("Error:", error.message);
-    //         alert("Failed to create account. Please try again.");
-    //     });
+// to log in page
+document.getElementById("loginbttn").onclick = function() {
+    window.location.href = "/html/log in.html";
+};

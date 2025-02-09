@@ -2,19 +2,9 @@ body::-webkit-scrollbar{
     display:none;
 }
 /*main*/
-.carousel {
-    width: 90%;
-    height: 200px;
-    background-color: white;
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 26px;
-    font-weight: bold;
-}
 
-.categories, .best-prices, .recommended {
+
+.categories, .best-prices, .recommended, .lottie {
     width: 90%;
     margin: 20px auto;
 }
