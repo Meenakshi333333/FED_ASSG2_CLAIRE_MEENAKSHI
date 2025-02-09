@@ -27,6 +27,9 @@ We wanted to design and create a ecommerce platform selling pre-loved items to b
 - Scrollable sections
 - Responsive screen and text font sizes
 
+#### Link to our website video walkthrough
+[Video Walkthrough](https://drive.google.com/file/d/1AQCQf0MJHpXSqfjwZunAkK5XOffT_yG-/view?usp=drive_link)
+
 ## References & Credits
 ### Images
 - Some listing pictures were sourced from [Pinterest](https://www.pinterest.com/).
