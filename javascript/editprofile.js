@@ -55,6 +55,68 @@ document.getElementById("profile-dets").addEventListener("submit" , function (e)
     const emailI = document.getElementById("email");
     const genderI = document.getElementById("gender");
     const birthdayI = document.getElementById("birthday");
+    const form = document.getElementById("profile-dets");
+
+    const savedUsername = localStorage.getItem('username');
+    if (savedUsername) {
+        usernameI.value = savedUsername;
+    };
+    const savedName = localStorage.getItem('name');
+    if (savedName) {
+        nameI.value = savedName;
+    };
+    const savedBio = localStorage.getItem('bio');
+    if (savedBio) {
+        bioI.value = savedBio;
+    };
+    const savedLocation = localStorage.getItem('location');
+    if (savedLocation) {
+        locationI.value = savedLocation;
+    };
+    const savedEmail = localStorage.getItem('email');
+    if (savedUsername) {
+        emailI.value = savedEmail;
+    };
+    const savedGender = localStorage.getItem('gender');
+    if (savedGender) {
+        genderI.value = savedGender;
+    };
+    const savedBday = localStorage.getItem('birthday');
+    if (savedUsername) {
+        birthdayI.value = savedBday;
+    };
+
+    form.addEventListener("submit", function (e) {
+        if (usernameI.value !== localStorage.getItem('username')) {
+            localStorage.setItem('username', username.value);
+        };
+    
+        if (nameI.value !== localStorage.getItem('name')) {
+            localStorage.setItem('name', nameI.valuee);
+        };
+    
+        if (bioI.value !== localStorage.getItem('bio')) {
+            localStorage.setItem('bio', bioI.value);
+        };
+    
+        if (locationI.value !== localStorage.getItem('location')) {
+            localStorage.setItem('location', locationI.value);
+        };
+    
+        if (emailI.value !== localStorage.getItem('email')) {
+            localStorage.setItem('email', emailI.value);
+        };
+    
+        if (genderI.value !== localStorage.getItem('gender')) {
+            localStorage.setItem('gender', genderI.value);
+        };
+    
+        if (birthdayI.value !== localStorage.getItem('birthday')) {
+            localStorage.setItem('birthday', birthdayI.value);
+        };
+        
+        alert('Data saved successfully!');
+    });
 
     
 });
