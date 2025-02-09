@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MokeSell - edit profile details</title>
+    <title>MokeSell - Edit Profile Details</title>
     <link rel="stylesheet" href="/css/normalize.css" type="text/css">
     <link rel="stylesheet" href="/css/editprofile.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,21 +12,21 @@
 </head>
 <body>
 
-     <!--Nav Bar-->
-     <div id="NavBar">
+    <!--Nav Bar-->
+    <div id="NavBar">
         <button type="button" id="HomeButton">
             <text id="MSell">MokeSell</text>
         </button>
         <div id="rightbttns">
             <button type="button" id="UserButton">
-                <img src = "/images/user icon.png" id="UserImg">
+                <img src="/images/user icon.png" id="UserImg">
                 <text id="userprof">Your user profile</text>
             </button>
             <button type="button" id="LikesButton">
-                <img src = "/images/heart.png" id="HeartImg">
+                <img src="/images/heart.png" id="HeartImg">
             </button>
             <button type="button" id="CartButton">
-                <img src = "/images/shopping cart.webp" id="CartImg">
+                <img src="/images/shopping cart.webp" id="CartImg">
             </button>
             <button type="button" id="SellButton">
                 <text id="sell">Sell</text>
@@ -34,27 +34,29 @@
         </div>
     </div>
 
-
     <form id="profile-dets">
-        <h1>Edit profile</h1>
+        <h1>Edit Profile</h1>
+
         <div id="profile-photo">
-            <h2>Profile photo</h2>
+            <h2>Profile Photo</h2>
             <div id="photo-dets">
                 <img id="userpfp" src="/images/default pfp.webp" alt="user profile">
-                <input type="file" id="newuserpfp" name="userpfp" accept="image/*" >
+                <input type="file" id="newuserpfp" name="userpfp" accept="image/*">
             </div>
         </div>
+
         <div id="public-dets">
-            <h2>Public profile details</h2>
-            <label for = "username" class="labels">Username</label>
-            <input type="text" name="username" placeholder="" id="username">
+            <h2>Public Profile Details</h2>
+            <label for="username" class="labels">Username</label>
+            <input type="text" name="username" placeholder="Enter your username" id="username">
 
-            <label for = "name" class="labels">Your name</label>
-            <input type="text" name="name" placeholder="" id="name">
+            <label for="name" class="labels">Your Name</label>
+            <input type="text" name="name" placeholder="Enter your name" id="name">
 
-            <label for = "bio" class="labels">Bio</label>
-            <textarea id="bio" name="bio" rows = "4" column = "60"></textarea>
+            <label for="bio" class="labels">Bio</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Write something about yourself..."></textarea>
         </div>
+
         <div id="location">
             <h2>Location</h2>
             <div class="location-select">
@@ -71,10 +73,11 @@
                 </select>
             </div>
         </div>
+
         <div id="private-dets">
             <h2>Private User Details</h2>
             <label for="email" class="labels">Email</label>
-            <input type="text" name="email" placeholder="" id="email">
+            <input type="text" name="email" placeholder="Enter your email" id="email">
 
             <label for="gender" class="labels">Gender</label>
             <div class="gender-select">
@@ -86,9 +89,11 @@
             </div>
 
             <label for="birthday" class="labels">Birthday</label>
-            <input type="date" name = "birthday" id = "birthday">
+            <input type="date" name="birthday" id="birthday">
         </div>
+
         <hr>
+
         <input type="submit" value="Save Changes" id="save">
     </form>
 
@@ -102,7 +107,7 @@
         </dotlottie-player>
         <h2>You have reached the end :P</h2>
     </div>
-    
+
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="/javascript/editprofile.js"></script>
 </body>
