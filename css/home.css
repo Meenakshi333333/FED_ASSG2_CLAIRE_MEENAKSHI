@@ -134,43 +134,53 @@ body::-webkit-scrollbar{
     font-weight: bold;
 }
 
-.product-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: calc((100% - 1200px) / 3);
-    row-gap: 25px;
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 20px; /* Even gap between items */
+    row-gap: 20px; /* Even vertical gap */
 }
+
+
 .product-item p:first-of-type {
     font-size: 20px; /* Increase the font size */
     font-weight: bold; /* Optional: Make it stand out */
 }
 
+/* Update the .product-item to match .bprice-item styling */
 .product-item {
     border: none;
-    width: 300px;
-    height: 450px;
+    width: calc((100vw / 6) + 20px); /* Match the width */
+    height: calc((100vh / 1.7) + 25px); /* Match the height */
     background: rgb(235, 235, 235);
-    padding: 15px;
-    text-align: left; 
+    padding-top: 15px;
+    padding-left: 5px;
+    text-align: left;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 5px;
+    cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
 }
+
+/* Hover effect for product-item to match bprice-item hover */
 .product-item:hover {
-    background:rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     transform: scale(1.03);
 }
+
+/* Listing photo */
 .listing-photo {
     width: 100%;
-    height: 300px;
+    height: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .listing-photo img {
@@ -179,25 +189,29 @@ body::-webkit-scrollbar{
     object-fit: cover;
 }
 
+/* Price styling */
+.price {
+    font-size: 2vh;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Adjusting p tags for the product-item */
 .product-item p {
     margin: 5px 0;
     font-size: 14px;
 }
 
+/* Additional styling for other elements */
 .product-item .seller-info {
     font-size: 12px;
     color: #555;
-}
-
-.product-item .price {
-    font-size: 26px;
-    font-weight: bold;
-    color: #000000;
 }
 
 .product-item .condition {
     font-size: 14px;
     color: #333;
 }
+
 
 
