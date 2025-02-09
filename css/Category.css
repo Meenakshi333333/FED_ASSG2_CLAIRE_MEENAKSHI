@@ -21,21 +21,25 @@
     width: 180px;
     height: 180px;
     justify-content: center;
+    text-align: center; /* Ensure text is centered */
+    box-sizing: border-box; /* To account for padding and borders */
 }
 .sub-category:hover {
     transform: scale(1.05);
 }
 .sub-category img {
-    width: 100px;
-    height:100px;
-    object-fit: cover;
-    border-radius: 50%;
+    width: 100px; /* Adjust the width of the image */
+    height: 100px; /* Adjust the height of the image */
+    object-fit: cover; /* Ensures image fills the circle */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 10px; /* Add space between the image and text */
 }
 .sub-category span {
     margin-top: 5px;
     font-size: 14px;
     font-weight: bold;
 }
+
 
 /* Available Listings */
 .available-listings {
