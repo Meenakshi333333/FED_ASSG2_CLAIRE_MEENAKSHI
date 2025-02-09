@@ -51,8 +51,8 @@ body::-webkit-scrollbar{
 }
 hr {
     border: 0;
-    border-top: 2px solid #9c9c9c; /* Adds a visible line */
+    border-top: 2px solid #9c9c9c;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%; /* Ensure it spans the entire width */
+    width: 100%;
 }
