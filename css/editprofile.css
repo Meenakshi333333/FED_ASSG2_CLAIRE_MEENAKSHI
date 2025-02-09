@@ -3,52 +3,108 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Slabo 13px', serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
 }
-body::-webkit-scrollbar{
-    display:none;
+
+body::-webkit-scrollbar {
+    display: none;
 }
+#profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align profile photo to the left */
+    margin-bottom: 20px; /* Add some spacing below */
+}
+
+#photo-dets {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align elements inside the container to the left */
+    align-items: center;
+    gap: 15px;
+}
+
+#userpfp {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 #profile-dets {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 70px;
     width: 80vw;
+    max-width: 900px;
     height: auto;
     border-radius: 15px;
-    background: rgb(176,190,197);
-    padding: 25px;
+    background: rgb(176, 190, 197);
+    padding: 30px;
     gap: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#profile-photo{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
+h1, h2 {
+    color: #333;
+    font-weight: bold;
 }
 
-#photo-dets{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+#profile-photo, #public-dets, #private-dets, #location {
+    width: 100%;
 }
-#userpfp{
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-    object-fit: cover;
+
+
+input[type="file"] {
+    font-size: 14px;
+    background: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
-#public-dets {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+
+.labels {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
-#private-dets {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+
+input[type="text"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-sizing: border-box;
 }
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 hr {
     border: 0;
     border-top: 2px solid #9c9c9c;
@@ -56,3 +112,14 @@ hr {
     margin-bottom: 20px;
     width: 100%;
 }
+
+.lottie {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.lottie h2 {
+    font-size: 16px;
+    color: #555;
+}
+
