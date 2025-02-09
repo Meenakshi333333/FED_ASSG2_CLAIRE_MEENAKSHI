@@ -1,6 +1,7 @@
 # Our Website for MokeSell
 
 ## The Design Rationale
+We wanted to design and create a ecommerce platform selling pre-loved items to be welcomed and well-used by the younger generations. In doing so, we decided on a few things we wanted from out website. Firstly, simplicity of the user interface and designs. Next, a chic yet modern UX that will attract and please those of the younger generation. With these key points in mind, we believe that we would be able to create the most used ecommerce platform used by the youths in our generation.
 
 ### Initial Idea + Wireframes
 [Link to our wireframes](https://www.figma.com/design/Oaog7V7mHdV9O9jMwTwBqQ/FED_S10267951B_S10267061F_Assg2_Checkpoint1_wireframes?node-id=125-417&t=ApeXed28B3P8lHii-1)
@@ -17,4 +18,24 @@
 9) 000000 – rgb(0,0,0)
 10) FFFFFF – rgb(255,255,255)
 
+### Features included in the current stage of our website
+- User account creation
+- User log in authentication
+- Viewing listing by categories
+- Editing user account details + Saving them
+- Interactive buttons
+- Scrollable sections
+- Responsive screen and text font sizes
 
+## References & Credits
+### Images
+- Some listing pictures were sourced from [Pinterest](https://www.pinterest.com/).
+- Icons and other pictures just sourced from [Google](https://www.google.com/).
+
+### 
+### Platforms I consulted during this process
+1) [W3Schools](https://www.w3schools.com/)
+2) [Stack Overflow](https://stackoverflow.com/)
+3) [Carousel](https://www.carousell.sg/)
+4) [ChatGPT](https://chatgpt.com/)
+5) [Google](https://www.google.com/)
