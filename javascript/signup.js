@@ -106,5 +106,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // to log in page
 document.getElementById("loginbttn").onclick = function() {
-    window.location.href = "/html/log in.html";
+    window.location.href = "/log in.html";
 };

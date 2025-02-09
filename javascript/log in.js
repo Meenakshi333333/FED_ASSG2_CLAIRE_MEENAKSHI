@@ -96,6 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // to sign up
 
-document.getElementById("loginbttn").onclick = function() {
+document.getElementById("signupbttn").onclick = function() {
     window.location.href = "/html/signup.html";
 };
