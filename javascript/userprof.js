@@ -1,4 +1,4 @@
-document.querySelector("edit-profile").onclick = function() {
+document.querySelector(".edit-profile").onclick = function() {
     window.location.href = "/html/editprofile.html";
 };
 
