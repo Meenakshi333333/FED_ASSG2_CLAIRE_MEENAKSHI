@@ -33,7 +33,7 @@ setInterval(tonextphoto, 4000);
 document.addEventListener("DOMContentLoaded", function () {
     const APIKEY = "6796210b0acc06ecb10d3649";
 
-    document.getElementById("dets").addEventListener("submit", function (e) {
+    document.getElementById("dets").addEventListener("submit", async function (e) {
       e.preventDefault();
   
       let SUusername = document.getElementById("SU_username").value;
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       };
   
       try {
-        let checkResponse = fetch(`https://useraccounts-d594.restdb.io/rest/account?q={"email": "${SUemail}"}`, {
+        let checkResponse = await fetch(`https://useraccounts-d594.restdb.io/rest/account?q={"email": "${SUemail}"}`, {
             headers: {
                 "x-apikey": APIKEY
             }
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        let response = fetch("https://useraccounts-d594.restdb.io/rest/account", settings);
+        let response = await fetch("https://useraccounts-d594.restdb.io/rest/account", settings);
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -81,14 +81,14 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Account created successfully:", data);
         alert("Account created successfully!");
 
-        localStorage.setItem("username", SUusername);
-        localStorage.setItem("email", SUemail);
-        localStorage.setItem("name", "");
-        localStorage.setItem("bio", "");
-        localStorage.setItem("gender", "");
-        localStorage.setItem("location","");
-        var a = new Date();
-        localStorage.setItem("birthday", a.toString());
+        // localStorage.setItem("username", SUusername);
+        // localStorage.setItem("email", SUemail);
+        // localStorage.setItem("name", "");
+        // localStorage.setItem("bio", "");
+        // localStorage.setItem("gender", "");
+        // localStorage.setItem("location","");
+        // var a = new Date();
+        // localStorage.setItem("birthday", a.toString());
 
         document.getElementById("dets").reset();
         setTimeout(() => {
@@ -106,5 +106,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // to log in page
 document.getElementById("loginbttn").onclick = function() {
-    window.location.href = "/log in.html";
+    window.location.href = "/html/log in.html";
 };
