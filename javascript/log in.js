@@ -1,29 +1,29 @@
 //photo carousel
 let index = 0;
-const pcarousel = document.getElementsByClassName("carousel")[0]; // Get the first carousel
-const dots = document.getElementsByClassName("dot"); // Get all the dots (use correct class name)
-const numphotos = document.getElementsByClassName("photo").length; // Get the number of photos
+const pcarousel = document.getElementsByClassName("carousel")[0];
+const dots = document.getElementsByClassName("dot");
+const numphotos = document.getElementsByClassName("photo").length; //number of photos
 
 // active/inactive dots
 function updatedots() {
     // Use a loop or Array.from() to iterate over the dots
     Array.from(dots).forEach((dot, i) => {
-        dot.classList.toggle("active", i === index); // Toggle the 'active' class based on the index
+        dot.classList.toggle("active", i === index);
     });
 }
 
 // to move to the next photo
 function tonextphoto() {
-    index = (index + 1) % numphotos; // Loop back to the first photo after the last one
-    pcarousel.style.transform = `translateX(-${index * 100}%)`; // Use template literals for dynamic width
-    updatedots(); // Update dots
+    index = (index + 1) % numphotos; // loop back to the first photo after the last one
+    pcarousel.style.transform = `translateX(-${index * 100}%)`;
+    updatedots();
 }
 
 // initializing the photo at given index
 function setphoto(photoindex) {
     index = photoindex;
-    pcarousel.style.transform = `translateX(-${index * 100}%)`; // Use template literals
-    updatedots(); // Update dots
+    pcarousel.style.transform = `translateX(-${index * 100}%)`;
+    updatedots();
 }
 
 // auto movement
@@ -71,15 +71,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (existingUser.length === 0) {
             alert("This email is not registered. Please create account instead.");
-            loginButton.disabled = false;
             return;
         }
 
         let user = existingUser[0];
         if (user.password === LIpassword && user.username === LIusername) {
             alert("Login successful!");
-            localStorage.setItem("username", SUusername);
-            localStorage.setItem("email", SUemail);
+            localStorage.setItem("username", LIusername);
+            localStorage.setItem("email", LIemail);
             setTimeout(() => {
                 window.location.replace("/html/home.html"); 
             }, 500);
