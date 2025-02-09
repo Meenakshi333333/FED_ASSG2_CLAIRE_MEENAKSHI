@@ -18,3 +18,8 @@ document.querySelector(".buyer-tab").onclick = function() {
 document.querySelector(".seller-tab").onclick = function() {
     window.location.href = "/html/User profile - reviews.html";
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+    const username = localStorage.getItem('username');
+    document.getElementById('username').textContent = username;
+});
