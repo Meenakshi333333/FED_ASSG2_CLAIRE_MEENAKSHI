@@ -3,31 +3,13 @@ document.getElementById("tolisting").onclick = function() {
 };
 
 document.getElementById("to-cat-page").onclick = function() {
-    window.location.href = "/html/Category";
+    window.location.href = "/html/Category.html";
 };
 
-// function myFunction() {
-//     document.getElementById("option-dropdown").classList.toggle("show");
-// };
 
-// function filterFunction() {
-//     const input = document.getElementById("search-cat-input");
-//     const filter = input.value.toUpperCase();
-//     const div = document.getElementById("option-dropdown");
-//     const options = div.getElementsByClassName("cat-option");
-//     for (let i = 0; i < a.length; i++) {
-//       txtValue = options[i].textContent || options[i].innerText;
-//       if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//         options[i].style.display = "";
-//       } else {
-//         options[i].style.display = "none";
-//       }
-//     };
-// };
-
-function myFunction() {
-    document.getElementById("option-dropdown").classList.toggle("show");
-}
+document.querySelector(".cat-dropdown").onclick = function() {
+    document.getElementsByClass("search-content").classList.toggle("show");
+};
 
 function filterFunction() {
     const input = document.getElementById("search-cat-input");
@@ -42,6 +24,7 @@ function filterFunction() {
             options[i].style.display = "";  // Show matching options
         } else {
             options[i].style.display = "none";  // Hide non-matching options
-        }
-    }
-} 
+        };
+    };
+};
+

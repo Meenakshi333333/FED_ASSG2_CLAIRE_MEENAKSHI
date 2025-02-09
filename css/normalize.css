@@ -49,7 +49,7 @@ hr {
     display: flex;
     flex-direction: column;
 }
-#cat-dropdown{
+.cat-dropdown{
     background-color:rgb(255, 255, 255);
     color:rgb(152, 152, 152);
     padding: 15px;
@@ -59,7 +59,7 @@ hr {
     cursor: pointer;
     position:relative;
 }
-#cat-dropdown:hover, #cat-dropdown:focus {
+.cat-dropdown:hover, .cat-dropdown:focus {
     background-color:rgb(224, 224, 224);
     color: rgb(149, 149, 149);
 }
@@ -71,7 +71,7 @@ hr {
     border-radius: 8px;
 }
 
-#option-dropdown {
+.search-content {
     display: none; 
     top: 55px;
     position: absolute;

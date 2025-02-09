@@ -20,10 +20,10 @@
                 <text id="MSell">MokeSell</text>
             </button>
             <div id="dropdown">
-                <button onclick="myFunction()" id="cat-dropdown">Search by category</button>
+                <button onclick="myFunction()" class="cat-dropdown">Search by category</button>
                 <div id="option-dropdown" class="search-content">
                     <input type="text" placeholder="Search..." id="search-cat-input" onkeyup="filterFunction()">
-                    <button type="button" class="cat-option" id="to-cat-page">Women's Fashion</button>
+                    <button type="button" class="cat-option">Women's Fashion</button>
                     <button type="button" class="cat-option">Men's Fashion</button>
                     <button type="button" class="cat-option">Athleisure</button>
                     <button type="button" class="cat-option">Jewelry</button>
@@ -59,7 +59,7 @@
     <div class="categories">
         <h3>Categories</h3>
         <div class="category-list">
-            <button class="category-item">
+            <button id="to-cat-page" class="category-item">
                 <img class="cat-img" src="/images/womens fashion.webp">
                 <text class="cat">Women's Fashion</text>
             </button>
