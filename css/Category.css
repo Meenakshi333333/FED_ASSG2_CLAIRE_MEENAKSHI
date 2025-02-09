@@ -46,14 +46,26 @@
 }
 
 /* Grid Settings */
-.listing-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four grids per row */
-    gap: 50px; /* Increased gap between grids to make them further apart */
-    margin-top: 20px; /* Optional: Add top margin for spacing */
+/* Listing Photo - Make the image lengthier */
+.listing-photo {
+    width: 100%;
+    height: 500px; /* Increased height for a lengthier image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
-/* Listing Card */
+/* Grid Settings - Increase gap and space for larger grid */
+.listing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Keep 4 grids per row */
+    gap: 60px; /* Increase gap between grids */
+    margin-top: 20px;
+}
+
+/* Listing Card - Adjust height for new image size */
 .listing-card {
     background-color: #fff;
     border-radius: 8px;
@@ -63,9 +75,9 @@
     flex-direction: column;
     justify-content: space-between;
     font-size: 0.9rem;
-    height: 550px; /* Ensure all cards have equal height */
+    height: 600px; /* Increase card height to accommodate taller image */
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    width: 100%; /* Make cards take full width within their grid cell */
+    width: 100%; /* Ensure card takes full width within grid cell */
 }
 
 /* Hover effect */
@@ -74,21 +86,10 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Ensure all images have the same size */
-.listing-photo {
-    width: 100%;
-    height: 400px; /* Consistent height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
 .listing-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Makes all images appear the same without stretching */
+    object-fit: cover;
 }
 
 .listing-details {
@@ -111,4 +112,12 @@
     color: #e65c50;
 }
 
+.username {
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin: 0;
+}
+.listdate, .listdesc, .price, .condition{
+    margin:0;
+}
 
