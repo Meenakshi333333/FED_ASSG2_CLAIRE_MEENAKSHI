@@ -6,5 +6,5 @@ document.getElementById("SellButton").onclick = function() {
     window.location.href = "/html/sell.html";
 };
 document.getElementById("UserButton").onclick = function() {
-    window.location.href = "/html/User profile - listings.html";
+    window.location.href = "/html/User profile - listings .html";
 };
