@@ -1,8 +1,8 @@
 /*nav bar redirection*/
-document.getElementById("HomekButton").onclick = function() {
+document.getElementById("HomeButton").onclick = function() {
     window.location.href = "/html/home.html";
 };
-document.getElementById("SelllButton").onclick = function() {
+document.getElementById("SellButton").onclick = function() {
     window.location.href = "/html/sell.html";
 };
 document.getElementById("UserButton").onclick = function() {
