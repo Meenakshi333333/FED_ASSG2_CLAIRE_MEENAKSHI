@@ -12,26 +12,48 @@
 </head>
 <body>
 
-    <!--Nav Bar-->
-    <div id="NavBar">
-        <button type="button" id="HomeButton">
-            <text id="MSell">MokeSell</text>
-        </button>
-        <div id="rightbttns">
-            <button type="button" id="UserButton">
-                <img src="/images/user icon.png" id="UserImg">
-                <text id="userprof">Your user profile</text>
+    <div class="heading">
+        <!--Nav Bar-->
+        <div id="NavBar">
+            <button type="button" id="HomeButton">
+                <text id="MSell">MokeSell</text>
             </button>
-            <button type="button" id="LikesButton">
-                <img src="/images/heart.png" id="HeartImg">
-            </button>
-            <button type="button" id="CartButton">
-                <img src="/images/shopping cart.webp" id="CartImg">
-            </button>
-            <button type="button" id="SellButton">
-                <text id="sell">Sell</text>
-            </button>
+            <div id="dropdown">
+                <button onclick="myFunction()" class="cat-dropdown">Search by category</button>
+                <div id="option-dropdown" class="search-content">
+                    <input type="text" placeholder="Search..." id="search-cat-input" onkeyup="filterFunction()">
+                    <button type="button" class="cat-option">Women's Fashion</button>
+                    <button type="button" class="cat-option">Men's Fashion</button>
+                    <button type="button" class="cat-option">Athleisure</button>
+                    <button type="button" class="cat-option">Jewelry</button>
+                    <button type="button" class="cat-option">Beauty Products</button>
+                    <button type="button" class="cat-option">Furniture</button>
+                    <button type="button" class="cat-option">Home Appliances</button>
+                    <button type="button" class="cat-option">Story Books</button>
+                    <button type="button" class="cat-option">Learning $ Enrichment</button>
+                    <button type="button" class="cat-option">Pet Supplies</button>
+                    <button type="button" class="cat-option">Sports Equipment</button>
+                    <button type="button" class="cat-option">Others</button>    
+                </div>
+            </div>
+            <div id="rightbttns">
+                <button type="button" id="UserButton">
+                    <img src = "/images/user icon.png" id="UserImg">
+                    <text id="userprof">Your user profile</text>
+                </button>
+                <button type="button" id="LikesButton">
+                    <img src = "/images/heart.png" id="HeartImg">
+                </button>
+                <button type="button" id="CartButton">
+                    <img src = "/images/shopping cart.webp" id="CartImg">
+                </button>
+                <button type="button" id="SellButton">
+                    <text id="sell">Sell</text>
+                </button>
+            </div>
         </div>
+        <hr>
+        
     </div>
 
     <form id="profile-dets">
@@ -110,5 +132,6 @@
 
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="/javascript/editprofile.js"></script>
+    <script src="/javascript/main.js"></script>
 </body>
 </html>

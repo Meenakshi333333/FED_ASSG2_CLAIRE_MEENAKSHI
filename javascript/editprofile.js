@@ -49,10 +49,12 @@ document.getElementById("newuserpfp").addEventListener("change", function () {
 document.getElementById("profile-dets").addEventListener("submit" , function (e) {
     //inputs
     const usernameI = document.getElementById("username");
-    const nameI = document.getElementById("username");
-    const bioI = document.getElementById("username");
-    const locationI = document.getElementById("username");
-    const emailI = document.getElementById("username");
-    const genderI = document.getElementById("username");
-    const birthdayI = document.getElementById("username");
+    const nameI = document.getElementById("email");
+    const bioI = document.getElementById("bio");
+    const locationI = document.getElementById("location");
+    const emailI = document.getElementById("email");
+    const genderI = document.getElementById("gender");
+    const birthdayI = document.getElementById("birthday");
+
+    
 });

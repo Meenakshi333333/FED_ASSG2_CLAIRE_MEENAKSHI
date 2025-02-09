@@ -11,11 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="heading">
         <!--Nav Bar-->
         <div id="NavBar">
             <button type="button" id="HomeButton">
                 <text id="MSell">MokeSell</text>
             </button>
+            <div id="dropdown">
+                <button onclick="myFunction()" class="cat-dropdown">Search by category</button>
+                <div id="option-dropdown" class="search-content">
+                    <input type="text" placeholder="Search..." id="search-cat-input" onkeyup="filterFunction()">
+                    <button type="button" class="cat-option">Women's Fashion</button>
+                    <button type="button" class="cat-option">Men's Fashion</button>
+                    <button type="button" class="cat-option">Athleisure</button>
+                    <button type="button" class="cat-option">Jewelry</button>
+                    <button type="button" class="cat-option">Beauty Products</button>
+                    <button type="button" class="cat-option">Furniture</button>
+                    <button type="button" class="cat-option">Home Appliances</button>
+                    <button type="button" class="cat-option">Story Books</button>
+                    <button type="button" class="cat-option">Learning $ Enrichment</button>
+                    <button type="button" class="cat-option">Pet Supplies</button>
+                    <button type="button" class="cat-option">Sports Equipment</button>
+                    <button type="button" class="cat-option">Others</button>    
+                </div>
+            </div>
             <div id="rightbttns">
                 <button type="button" id="UserButton">
                     <img src = "/images/user icon.png" id="UserImg">
@@ -32,6 +51,9 @@
                 </button>
             </div>
         </div>
+        <hr>
+        
+    </div>
         <div class="container">
             <div class="profile-header">
                 <div class="background-picture">background picture</div>
@@ -50,9 +72,9 @@
             </div>
     
             <div class="tabs">
-                <button>Your listings</button>
-                <button>Liked listings</button>
-                <button class="active">Reviews</button>
+                <button id="userlisting">Your listings</button>
+                <button id="likedlisting">Liked listings</button>
+                <button id="reviews" class="active">Reviews</button>
             </div>
     <section class="reviews-section">
     <div class="big-reviews-box">
@@ -152,6 +174,10 @@
                         </div>
                     </div>
                 </div>
-             </div>
-    </div>
-</section>
+            </div>
+        </div>
+    </section>
+    <script src="/javascript/main.js"></script>
+    <script src="/javascript/userprof.js"></script>
+</body>
+</html>
